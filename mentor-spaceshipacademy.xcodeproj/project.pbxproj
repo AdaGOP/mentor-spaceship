@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E9E16FE2668817A00E0985C /* Cockpit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E16FD2668817A00E0985C /* Cockpit.storyboard */; };
+		4E9E17002668818A00E0985C /* CockpitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E16FF2668818A00E0985C /* CockpitViewController.swift */; };
 		E6698CE2266721C400EB4A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6698CE1266721C400EB4A4B /* AppDelegate.swift */; };
 		E6698CE4266721C400EB4A4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6698CE3266721C400EB4A4B /* SceneDelegate.swift */; };
 		E6698CE6266721C400EB4A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6698CE5266721C400EB4A4B /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E9E16FD2668817A00E0985C /* Cockpit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cockpit.storyboard; sourceTree = "<group>"; };
+		4E9E16FF2668818A00E0985C /* CockpitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CockpitViewController.swift; sourceTree = "<group>"; };
 		E6698CDE266721C400EB4A4B /* mentor-spaceshipacademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mentor-spaceshipacademy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6698CE1266721C400EB4A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6698CE3266721C400EB4A4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E9E16FC2668816800E0985C /* Cockpit */ = {
+			isa = PBXGroup;
+			children = (
+				4E9E16FD2668817A00E0985C /* Cockpit.storyboard */,
+				4E9E16FF2668818A00E0985C /* CockpitViewController.swift */,
+			);
+			path = Cockpit;
+			sourceTree = "<group>";
+		};
 		E6698CD5266721C400EB4A4B = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		E6698CE0266721C400EB4A4B /* mentor-spaceshipacademy */ = {
 			isa = PBXGroup;
 			children = (
+				4E9E16FC2668816800E0985C /* Cockpit */,
 				E6698CE1266721C400EB4A4B /* AppDelegate.swift */,
 				E6698CE3266721C400EB4A4B /* SceneDelegate.swift */,
 				E6698CE5266721C400EB4A4B /* ViewController.swift */,
@@ -126,6 +140,7 @@
 			files = (
 				E6698CEE266721C600EB4A4B /* LaunchScreen.storyboard in Resources */,
 				E6698CEB266721C600EB4A4B /* Assets.xcassets in Resources */,
+				4E9E16FE2668817A00E0985C /* Cockpit.storyboard in Resources */,
 				E6698CE9266721C400EB4A4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +154,7 @@
 			files = (
 				E6698CE6266721C400EB4A4B /* ViewController.swift in Sources */,
 				E6698CE2266721C400EB4A4B /* AppDelegate.swift in Sources */,
+				4E9E17002668818A00E0985C /* CockpitViewController.swift in Sources */,
 				E6698CE4266721C400EB4A4B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

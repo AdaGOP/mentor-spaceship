@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func navigateToCockpit(_ sender: UIButton) {
+        let cockpitStoryboard = UIStoryboard(name: "Cockpit", bundle: nil)
+        let cockpit = cockpitStoryboard.instantiateViewController(withIdentifier: "cockpitstoryboard") as! CockpitViewController
+        self.present(cockpit, animated: true)
+    }
+    
 }
 
