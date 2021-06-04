@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func navigateToFuel(_ sender: UIButton) {
-        
+        let fuelStoryboard = UIStoryboard(name: "Fuel", bundle: nil)
+        let fuel = fuelStoryboard.instantiateViewController(withIdentifier: "fuelStoryboard") as! FuelViewController
+        self.present(fuel, animated: true)
     }
     
     
