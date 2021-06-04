@@ -49,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BA2A2C6266A810400651493 /* Electrical */ = {
+			isa = PBXGroup;
+			children = (
+				1BE3AD3C266A4EAF00A16BDA /* Electrical.storyboard */,
+				1B691065266898BB007F3A50 /* ElectricalViewController.swift */,
+			);
+			path = Electrical;
+			sourceTree = "<group>";
+		};
 		4E9E16FC2668816800E0985C /* Cockpit */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +86,7 @@
 		E6698CE0266721C400EB4A4B /* mentor-spaceshipacademy */ = {
 			isa = PBXGroup;
 			children = (
+				1BA2A2C6266A810400651493 /* Electrical */,
 				E6EDA98E2669BB4200932CA6 /* Control Engine */,
 				4E9E16FC2668816800E0985C /* Cockpit */,
 				E6698CE1266721C400EB4A4B /* AppDelegate.swift */,
@@ -84,11 +94,9 @@
 				F4E687562669D3DC00EA174E /* Fuel */,
 				E6698CE5266721C400EB4A4B /* ViewController.swift */,
 				E6698CE7266721C400EB4A4B /* Main.storyboard */,
-				1BE3AD3C266A4EAF00A16BDA /* Electrical.storyboard */,
 				E6698CEA266721C600EB4A4B /* Assets.xcassets */,
 				E6698CEC266721C600EB4A4B /* LaunchScreen.storyboard */,
 				E6698CEF266721C600EB4A4B /* Info.plist */,
-				1B691065266898BB007F3A50 /* ElectricalViewController.swift */,
 			);
 			path = "mentor-spaceshipacademy";
 			sourceTree = "<group>";
