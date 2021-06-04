@@ -17,6 +17,7 @@ class ElectricalViewController: UIViewController {
     
     @IBAction func navigateToControl(_ sender: UIButton) {
         //code to navigate to Control Room
+        dismiss(animated: true, completion: nil)
         
     }
     
