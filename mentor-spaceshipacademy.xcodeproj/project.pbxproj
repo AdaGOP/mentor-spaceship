@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E9E16FE2668817A00E0985C /* Cockpit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E16FD2668817A00E0985C /* Cockpit.storyboard */; };
 		4E9E17002668818A00E0985C /* CockpitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E16FF2668818A00E0985C /* CockpitViewController.swift */; };
+		1B691066266898BB007F3A50 /* ElectricalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B691065266898BB007F3A50 /* ElectricalViewController.swift */; };
 		E6698CE2266721C400EB4A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6698CE1266721C400EB4A4B /* AppDelegate.swift */; };
 		E6698CE4266721C400EB4A4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6698CE3266721C400EB4A4B /* SceneDelegate.swift */; };
 		E6698CE6266721C400EB4A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6698CE5266721C400EB4A4B /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		4E9E16FD2668817A00E0985C /* Cockpit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cockpit.storyboard; sourceTree = "<group>"; };
 		4E9E16FF2668818A00E0985C /* CockpitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CockpitViewController.swift; sourceTree = "<group>"; };
+		1B691065266898BB007F3A50 /* ElectricalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricalViewController.swift; sourceTree = "<group>"; };
 		E6698CDE266721C400EB4A4B /* mentor-spaceshipacademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mentor-spaceshipacademy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6698CE1266721C400EB4A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6698CE3266721C400EB4A4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				E6698CEA266721C600EB4A4B /* Assets.xcassets */,
 				E6698CEC266721C600EB4A4B /* LaunchScreen.storyboard */,
 				E6698CEF266721C600EB4A4B /* Info.plist */,
+				1B691065266898BB007F3A50 /* ElectricalViewController.swift */,
 			);
 			path = "mentor-spaceshipacademy";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B691066266898BB007F3A50 /* ElectricalViewController.swift in Sources */,
 				E6698CE6266721C400EB4A4B /* ViewController.swift in Sources */,
 				E6698CE2266721C400EB4A4B /* AppDelegate.swift in Sources */,
 				4E9E17002668818A00E0985C /* CockpitViewController.swift in Sources */,
@@ -241,6 +245,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -296,6 +301,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
