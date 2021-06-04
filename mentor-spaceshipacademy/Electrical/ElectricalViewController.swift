@@ -23,6 +23,9 @@ class ElectricalViewController: UIViewController {
     
     @IBAction func navigateToFuel(_ sender: UIButton) {
         //TODO: talk to the owner of Fuel Page
+        let fuelStoryboard = UIStoryboard(name: "Fuel", bundle: nil)
+        let fuel = fuelStoryboard.instantiateViewController(identifier: "fuelStoryboard") as! FuelViewController
+        self.present(fuel, animated: true)
     }
     
 }
