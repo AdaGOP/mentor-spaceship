@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mentor_spaceshipacademy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control Engine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSK-FO-C8F">
+                                <rect key="frame" x="16" y="144" width="382" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WS9-rq-FVD">
+                                <rect key="frame" x="25" y="242" width="364" height="30"/>
+                                <state key="normal" title="Cockpit &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToCockpit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYI-nQ-0UK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHu-Pq-MmY">
+                                <rect key="frame" x="25" y="297" width="364" height="30"/>
+                                <state key="normal" title="Fuel &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToFuel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIl-Qd-vQY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUO-Lv-Gx7">
+                                <rect key="frame" x="25" y="352" width="364" height="30"/>
+                                <state key="normal" title="Electrical &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToElectrical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Krm-Ab-e0B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.24161353990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fSK-FO-C8F" secondAttribute="trailing" constant="16" id="1Dd-RL-WlN"/>
+                            <constraint firstItem="WS9-rq-FVD" firstAttribute="top" secondItem="fSK-FO-C8F" secondAttribute="bottom" constant="68" id="3S7-xh-wY6"/>
+                            <constraint firstItem="VUO-Lv-Gx7" firstAttribute="trailing" secondItem="pHu-Pq-MmY" secondAttribute="trailing" id="3xL-M7-dk1"/>
+                            <constraint firstItem="pHu-Pq-MmY" firstAttribute="top" secondItem="WS9-rq-FVD" secondAttribute="bottom" constant="25" id="5gr-Ug-gum"/>
+                            <constraint firstItem="pHu-Pq-MmY" firstAttribute="trailing" secondItem="WS9-rq-FVD" secondAttribute="trailing" id="5ry-lJ-5VI"/>
+                            <constraint firstItem="fSK-FO-C8F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="7ob-RW-X9C"/>
+                            <constraint firstItem="pHu-Pq-MmY" firstAttribute="leading" secondItem="WS9-rq-FVD" secondAttribute="leading" id="KIA-zX-cch"/>
+                            <constraint firstItem="WS9-rq-FVD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Ls8-hx-gfP"/>
+                            <constraint firstItem="VUO-Lv-Gx7" firstAttribute="leading" secondItem="pHu-Pq-MmY" secondAttribute="leading" id="MX0-9z-IRh"/>
+                            <constraint firstItem="VUO-Lv-Gx7" firstAttribute="top" secondItem="pHu-Pq-MmY" secondAttribute="bottom" constant="25" id="av1-TF-ak0"/>
+                            <constraint firstItem="fSK-FO-C8F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nRv-tM-17c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WS9-rq-FVD" secondAttribute="trailing" constant="25" id="wyK-0C-el0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+    </scenes>
+</document>

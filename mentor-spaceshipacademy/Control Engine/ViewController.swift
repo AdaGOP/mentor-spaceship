@@ -14,6 +14,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func navigateToCockpit(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func navigateToFuel(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func navigateToElectrical(_ sender: UIButton) {
+        
+    }
+    
 }
 
