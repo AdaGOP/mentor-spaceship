@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,24 +16,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snu-WC-gbC">
-                                <rect key="frame" x="47" y="545" width="126" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cockpit Room     &gt;">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is the control room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXI-WQ-gpV">
+                                <rect key="frame" x="16" y="456" width="382" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's directly have access to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PN-2e-Oua">
+                                <rect key="frame" x="16" y="500" width="382" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBG-xN-LhU">
+                                <rect key="frame" x="16" y="553" width="150" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Cockpit room          &gt;">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ju-Hh-Tae">
-                                <rect key="frame" x="43" y="688" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Electrical Room &gt;"/>
                                 <connections>
-                                    <action selector="navigateToElectrical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fM-32-UdW"/>
+                                    <action selector="navigateToCockpit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qKz-b2-lIG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8V-gy-5Wk">
+                                <rect key="frame" x="16" y="610" width="149" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Fuel room                &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToFuel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flZ-Pt-l2Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51u-P7-j4A">
+                                <rect key="frame" x="16" y="667" width="152" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Electrical room        &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToElectrical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVk-QU-wyE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Academy Spaceship" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMp-yc-vgk">
+                                <rect key="frame" x="16" y="144" width="382" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.015686274509803921" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hBG-xN-LhU" firstAttribute="top" secondItem="0PN-2e-Oua" secondAttribute="bottom" constant="33.5" id="2IH-zt-yEV"/>
+                            <constraint firstItem="hBG-xN-LhU" firstAttribute="leading" secondItem="0PN-2e-Oua" secondAttribute="leading" id="2Ya-jQ-jiD"/>
+                            <constraint firstItem="51u-P7-j4A" firstAttribute="leading" secondItem="v8V-gy-5Wk" secondAttribute="leading" id="4mW-Jl-3EV"/>
+                            <constraint firstItem="vMp-yc-vgk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="77E-q3-rTz"/>
+                            <constraint firstItem="FXI-WQ-gpV" firstAttribute="top" secondItem="vMp-yc-vgk" secondAttribute="bottom" constant="276" id="A1o-gP-4hT"/>
+                            <constraint firstItem="51u-P7-j4A" firstAttribute="top" secondItem="v8V-gy-5Wk" secondAttribute="bottom" constant="25" id="EGc-JE-wcd"/>
+                            <constraint firstItem="vMp-yc-vgk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="EkL-Be-RIq"/>
+                            <constraint firstItem="0PN-2e-Oua" firstAttribute="leading" secondItem="FXI-WQ-gpV" secondAttribute="leading" id="Q6p-pJ-UOz"/>
+                            <constraint firstItem="0PN-2e-Oua" firstAttribute="trailing" secondItem="FXI-WQ-gpV" secondAttribute="trailing" id="S2c-M3-tWY"/>
+                            <constraint firstItem="FXI-WQ-gpV" firstAttribute="trailing" secondItem="vMp-yc-vgk" secondAttribute="trailing" id="VTy-23-kB7"/>
+                            <constraint firstItem="v8V-gy-5Wk" firstAttribute="top" secondItem="hBG-xN-LhU" secondAttribute="bottom" constant="25" id="WsW-ry-yp2"/>
+                            <constraint firstItem="0PN-2e-Oua" firstAttribute="top" secondItem="FXI-WQ-gpV" secondAttribute="bottom" constant="8" symbolic="YES" id="cJN-vs-QWm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vMp-yc-vgk" secondAttribute="trailing" constant="16" id="etc-0u-1hY"/>
+                            <constraint firstItem="FXI-WQ-gpV" firstAttribute="leading" secondItem="vMp-yc-vgk" secondAttribute="leading" id="gGj-CS-cpS"/>
+                            <constraint firstItem="v8V-gy-5Wk" firstAttribute="leading" secondItem="hBG-xN-LhU" secondAttribute="leading" id="uCl-le-IRZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,4 +91,9 @@
             <point key="canvasLocation" x="139" y="131"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
